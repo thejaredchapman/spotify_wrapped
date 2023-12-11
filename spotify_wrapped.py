@@ -5,7 +5,8 @@ import pandas as pd
 import time
 import datetime
 
-sp =spotipy.Spotify(auth_manager=SpotifyOAuth(CLIENT_ID ='3de178190d004e12bc58be2787d128a4'
-                                                CLIENT_SECRET='22002629a66c481998ef8d717b5235d6'
-                                                REDIRECT_URL='http://127.0.0.1:9090'
-                                                SCOPE='user-library-read'))
+#TODO(Change parameter to match information from SPOTIFY WEB API, CLIENT_ID, CLIENT_SECRET, REDIRECT_URL, SCOPE)
+sp =spotipy.Spotify(auth_manager=SpotifyOAuth(CLIENT_ID =CLIENT_ID
+                                                CLIENT_SECRET=CLIENT_SECRET
+                                                REDIRECT_URL=REDIRECT_URL
+                                                SCOPE=SCOPE))
