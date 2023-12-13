@@ -13,7 +13,7 @@ sp =spotipy.Spotify(auth_manager=SpotifyOAuth(CLIENT_ID =CLIENT_ID
 
 mariah_uri = 'spotify:artist:6HL4z0CvFAxyc27GXpf02'
 
-results = sp.artist_albums(mariah_uri_uri, album_type='album')
+results = sp.artist_albums(mariah_uri, album_type='album')
 albums = results['items']
 while results['next']:
     results = sp.next(results)
